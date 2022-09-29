@@ -4,7 +4,8 @@
   "description": "template ========",
   "main": "index.js",
   "scripts": {
-    "start": "npx server -r web -o true"
+    "start": "npx server -r web -o true",
+    "deploy": "npx deploy web/static"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
     "@loadingio/bootstrap.ext": "^0.0.9",
     "@loadingio/debounce.js": "^1.0.1",
     "@loadingio/ldquery": "^3.0.4",
-    "@zbryikt/deploy": "^0.0.3",
+    "@zbryikt/deploy": "^0.0.4",
     "@zbryikt/template": "^2.3.38",
     "bootstrap": "^4.6.1",
     "fedep": "^1.1.7",
