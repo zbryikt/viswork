@@ -1,8 +1,7 @@
 {
   "name": "viswork",
-  "version": "1.0.0",
-  "description": "template ========",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "resources of data visualization",
   "scripts": {
     "start": "npx server -r web -o true",
     "deploy": "npx deploy web/static"
@@ -12,8 +11,8 @@
     "url": "git+https://github.com/zbryikt/viswork.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "zbryikt",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/zbryikt/viswork/issues"
   },
