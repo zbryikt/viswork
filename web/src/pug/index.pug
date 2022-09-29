@@ -1,0 +1,119 @@
+extends /base.pug
+block vars
+block prehead
+block head
+  style(type="text/css"): include:stylus index.styl
+block body
+  .w-1024.rwd.mx-auto.my-4
+    .mb-2 Resources of Data Visualiztion
+    h1.mb-0 資料視覺化資源
+    .py-2: hr
+
+    //-
+      .sect
+        h3 共筆
+        ul: li: a(href="slide.pdf",target="_blank") 投影片
+        ul: li: a(href="https://demo.firepad.io/#sjdfh6y1qP",target="_blank") 共筆
+    .d-flex
+      .flex-grow-1
+        .sect
+          h3#website-links 網站連結
+          ul
+            li: a(href="http://atavist.com") Atavist
+            li: a(href="https://docs.google.com/document/d/1pd3IS45jmbeSbQbEvLgpd6ZDpYH4ZcqJs9No7LYEGf8/edit") 共筆
+            li: a(href="http://plotdb.com",target="_blank") PlotDB
+            li: a(href="http://data.infographics.tw/viz/twstat/",target="_blank") 縣市重要指標
+            li: a(href="http://editor.method.ac/") Method Draw SVG Editor
+            li: a(href="https://docs.google.com/spreadsheets/u/0/") Google Spreadsheet
+            li: a(href="https://pulipulichen.github.io/jieba-js/") jieba.js
+
+        .sect
+          h3#data-sources 資料來源
+          ul
+            li: a(href="http://win.dgbas.gov.tw/dgbas04/bc5/EarningAndProductivity/QueryPages/More.aspx") 產業結構
+            li: a(href="http://data.gov.tw") 台灣開放資料入口網站
+            li: a(href="http://www.stat.gov.tw/mp.asp?mp=4") 中華民國統計資訊網
+            li: a(href="http://data.infographics.tw/viz/twstat/") 縣市重要統計指標 1998 ~ 2014
+            li: a(href="http://www.tfi.org.tw/about-publicinfo04.asp") 全國票房資訊 
+
+        .sect
+          h3#datasets 資料集連結
+          ul
+            li: a(href="data/學生成績表.csv") 學生成績表
+            li: a(href="data/百家姓.csv") 百家姓
+            li: a(href="data/2017數位藝術節臉書互動.csv") 2017數位藝術節臉書互動
+            li: a(href="data/us-crime-data.csv") 美國 20 年間犯罪率資料
+            li: a(href="data/us-crime-subset.csv") 美國 20 年間犯罪率資料 ( 部份資料 )
+            li: a(href="data/2016總統就職演說用詞分析.csv") 2016總統就職演說用詞分析
+            li: a(href="data/台大學生會.csv") 台大學生會政見用詞
+            li: a(href="data/朱立倫政治獻金資料近六百筆.csv") 朱立倫政治獻金資料近六百筆
+            li: a(href="data/漸凍人協會捐款芳名錄近六百筆.csv") 漸凍人協會捐款芳名錄近六百筆
+            li: a(href="data/漸凍人協會捐款芳名錄.csv") 漸凍人協會捐款芳名錄 (全部)
+            li: a(href="data/各國來台旅遊人數-2016-2014.csv") 近三年各國來台旅遊人數
+            li: a(href="data/來台旅遊人數(原始檔).xls") 2017/02各國來台旅遊人數原始檔
+            li: a(href="data/world-population.csv") 世界各國人口數
+            li: a(href="data/各國平均壽命.csv") 各國平均壽命
+            li: a(href="data/伊斯蘭相關恐攻事件.csv") 伊斯蘭相關恐攻事件
+            li: a(href="data/粗離婚率.csv") 粗離婚率
+            li: a(href="data/105年鄉鎮人口資料.csv") 105年各鄉鎮人口資料
+            li: a(href="data/工作坊事後問卷.csv") 工作坊事後問卷
+            li: a(href="data/olympic.csv") 世界各國奧林匹克得牌數統計
+            li: a(href="data/quake.csv") 2016年九月世界各地地震位置與強度
+            li: a(href="data/醫院列表.csv") 台灣醫院列表
+            li: a(href="data/宜蘭縣村里長資訊.xlsx") 宜蘭縣村里長資訊
+
+        .sect
+          h3#plotdb-samples PlotDB 範例圖表連結
+          ul
+            li: a(href="http://plotdb.com/chart/1003",target="_blank") Pie Bubble
+            li: a(href="http://plotdb.com/chart/2145",target="_blank") QA style Long Form
+            li: a(href="http://plotdb.com/chart/2146",target="_blank") Questionnaire
+            li: a(href="http://plotdb.com/chart/980",target="_blank") Dumbbell Chart
+            li: a(href="http://plotdb.com/chart/1015",target="_blank") Cycle Plot
+            li: a(href="http://plotdb.com/chart/1032",target="_blank") Connected Scatter Plot
+            li: a(href="http://plotdb.com/chart/1039",target="_blank") Sankey Chord
+            li: a(href="https://hackmd.io/p/SJ4KJA_Vx#/",target="_blank") PlotDB 互動式內容展示
+
+        .sect
+          h3#tool-links 工具連結
+          ul
+            li: a(href="https://vectorpaint.yaks.co.nz",target="_blank") Vector Paint 向量編輯服務
+            li: a(href="https://ronnywang.github.io/pdf-table-extractor/",target="_blank") Ronny 的 PDF 資料截取 程式
+            li: a(href="http://zbryikt.github.io/jsonconvert",target="_blank") JSON 轉 CSV
+            li: a(href="http://cartodb.com/") CartoDB
+            li: a(href="https://cartodb.github.io/odyssey.js/") Odyssey.js
+            li: a(href="http://0media.tw/t/qa/") 問答式數位專輯
+            li: a(href="http://plotdb.com/") PlotDB
+            li: a(href="http://atavist.com") Atavist 內容管理系統
+            li: a(href="https://timeline.knightlab.com") TimelineJS 時間軸工具
+
+        .sect
+          h3#references 範例參考
+          ul
+            li: a(href="http://graphics.wsj.com/gender-pay-gap/") WSJ 的動態垂直啞鈴圖
+            li: a(href="http://viz.tkirby.org/mrt/") 捷運出站人數圖
+            li: a(href="http://viz.tkirby.org/hiking/") 台北市親山步道列表
+            li: a(href="http://viz.tkirby.org/banana/") 3D 香蕉圖
+            li: a(href="http://viz.tkirby.org/crossfilter/") 立委質詢 Cross Filter
+            li: a(href="http://square.github.io/crossfilter/") Cross Filter library
+            li: a(href="http://www.nytimes.com/interactive/2015/09/30/business/how-the-us-and-opec-drive-oil-prices.html") 紐約時報: 油價 scrolltelling 範例
+            li: a(href="http://prinzhorn.github.io/skrollr/") Skrollr
+            li: a(href="http://zbryikt.github.io/bezier-edit/") 線上多人貝茲曲線編輯器
+            li: a(href="http://www.x3dom.org/") X3D - 3D 標記語言
+            li: a(href="https://www.firebase.com/") Firebase
+            li: a(href="http://0media.tw/p/yslin") 林義雄數位專輯 / skrollr 範例
+            li: a(href="https://angularjs.org/") AngularJS
+            li: a(href="https://kirbywu.atavist.com/reporter") Atavist 範例文章
+      div
+        .sticky(style="top:1em")
+          .list-group
+            a.list-group-item(href="#website-links") 網站連結
+            a.list-group-item(href="#data-sources") 資料來源
+            a.list-group-item(href="#datasets") 資料集連結
+            a.list-group-item(href="#plotdb-samples") PlotDB 範例圖表連結
+            a.list-group-item(href="#tool-links") 工具連結
+
+  #footer
+    a(href="http://x.co/dovis") 本頁網址
+
+block script

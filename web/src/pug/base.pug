@@ -1,0 +1,21 @@
+//- module
+doctype html
+include @/@loadingio/bootstrap.ext/index.pug
+html(lang="en")
+  block vars
+  head(prefix="og: http://ogp.me/ns#")
+    meta(charset="utf-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title
+    block prehead
+    link(rel="preconnect",href="https://fonts.googleapis.com")
+    link(rel="preconnect",href="https://fonts.gstatic.com",crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Martel:wght@300&family=Noto+Serif+TC:wght@300;700&family=Rubik:wght@300&display=swap",rel="stylesheet")
+    +css([
+      {name: "bootstrap", path: "dist/css/bootstrap.min.css"},
+      {name: "@loadingio/bootstrap.ext"}
+    ])
+    block head
+  body
+    block body
+    block script

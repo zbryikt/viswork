@@ -1,27 +1,48 @@
 {
-  "author": "Kirby Wu",
-  "name": "template",
-  "description": "simple, quick template for bootstrap a page",
-  "version": "0.0.1",
-  "homepage": "https://github.com/zbryikt/template",
+  "name": "viswork",
+  "version": "1.0.0",
+  "description": "template ========",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx server -r web -o true"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zbryikt/template"
+    "url": "git+https://github.com/zbryikt/viswork.git"
   },
-  "engines": {
-    "node": ">=0.12.6",
-    "npm": ">=1.2.2"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbryikt/viswork/issues"
   },
-  "scripts": {
-    "start": "node_modules/.bin/lsc server.ls",
-    "restart": "node_modules\\.bin\\lsc server.ls",
-    "prepare": "npm install chokidar@0.8.0"
-  },
+  "homepage": "https://github.com/zbryikt/viswork#readme",
   "dependencies": {
-    "LiveScript": ">=1.2.0",
-    "jade": "=1.11.0",
-    "chokidar": "=1.0.3",
-    "stylus": "=0.50.0",
-    "uglify-js": "=2.4.16"
+    "@loadingio/bootstrap.ext": "^0.0.9",
+    "@loadingio/debounce.js": "^1.0.1",
+    "@loadingio/ldquery": "^3.0.4",
+    "@zbryikt/deploy": "^0.0.3",
+    "@zbryikt/template": "^2.3.38",
+    "bootstrap": "^4.6.1",
+    "fedep": "^1.1.7",
+    "ldcover": "^3.3.0",
+    "ldiconfont": "^0.2.3",
+    "ldloader": "^3.0.2",
+    "ldview": "^1.3.0",
+    "proxise": "^1.0.1"
+  },
+  "frontendDependencies": {
+    "root": "web/static/assets/lib",
+    "modules": [
+      "@loadingio/bootstrap.ext",
+      "@loadingio/debounce.js",
+      "@loadingio/ldquery",
+      "bootstrap",
+      "ldcover",
+      "ldiconfont",
+      "ldloader",
+      "ldview",
+      "proxise"
+    ]
   }
 }
