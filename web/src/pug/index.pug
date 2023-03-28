@@ -3,6 +3,9 @@ block vars
 block prehead
 block head
   style(type="text/css"): include:stylus index.styl
+  +css([
+    {name: "ldiconfont"}
+  ])
 block body
   .w-1024.rwd.mx-auto.my-4
     .mb-2 Resources of Data Visualiztion
@@ -20,95 +23,97 @@ block body
           h3#website-links 網站連結
           ul
             //li: a(href="http://atavist.com") Atavist
-            li: a(href="https://docs.google.com/document/d/1pd3IS45jmbeSbQbEvLgpd6ZDpYH4ZcqJs9No7LYEGf8/edit") 共筆
-            li: a(href="http://plotdb.com",target="_blank") PlotDB
             //li: a(href="http://data.infographics.tw/viz/twstat/",target="_blank") 縣市重要指標
-            li: a(href="https://docs.google.com/spreadsheets/u/0/") Google Spreadsheet 線上試算表
+            li #[a(href="datavis-s1-2.pdf",target="_blank") 投影片 PDF] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://docs.google.com/document/d/1pd3IS45jmbeSbQbEvLgpd6ZDpYH4ZcqJs9No7LYEGf8/edit") 共筆] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://makechart.io",target="_blank",rel="noopener noreferrer") makechart.io] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com",target="_blank",rel="noopener noreferrer") PlotDB] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://docs.google.com/spreadsheets/u/0/",target="_blank",rel="noopener noreferrer") Google Spreadsheet 線上試算表] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
 
         .sect
           h3#datasets 資料集連結
           ul
-            li: a(href="assets/data/學生成績表.csv") 學生成績表
-            li: a(href="assets/data/百家姓.csv") 百家姓
-            //-li: a(href="assets/data/2017數位藝術節臉書互動.csv") 2017數位藝術節臉書互動
-            li: a(href="assets/data/us-crime-data.csv") 美國 20 年間犯罪率資料
-            li: a(href="assets/data/us-crime-subset.csv") 美國 20 年間犯罪率資料 ( 部份資料 )
-            li: a(href="assets/data/2016總統就職演說用詞分析.csv") 總統就職演說用詞分析-2016
-            li: a(href="assets/data/總統演說用詞-2016-vs-2020.csv") 總統就職演說用詞分析 2016 vs 2020
-            li: a(href="assets/data/台大學生會.csv") 台大學生會政見用詞
-            li: a(href="assets/data/朱立倫政治獻金資料近六百筆.csv") 朱立倫政治獻金資料近六百筆
-            li: a(href="assets/data/漸凍人協會捐款芳名錄近六百筆.csv") 漸凍人協會捐款芳名錄近六百筆
-            li: a(href="assets/data/漸凍人協會捐款芳名錄.csv") 漸凍人協會捐款芳名錄 (全部)
-            li: a(href="assets/data/各國來台旅遊人數-2016-2014.csv") 2014 ~ 2016 各國來台旅遊人數
-            li: a(href="assets/data/來台旅遊人數(原始檔).xls") 2017/02各國來台旅遊人數原始檔
-            li: a(href="assets/data/world-population.csv") 世界各國人口數
-            li: a(href="assets/data/各國平均壽命.csv") 各國平均壽命
-            li: a(href="assets/data/伊斯蘭相關恐攻事件.csv") 伊斯蘭相關恐攻事件
-            li: a(href="assets/data/粗離婚率.csv") 粗離婚率
-            li: a(href="assets/data/105年鄉鎮人口資料.csv") 105年各鄉鎮人口資料
-            //-li: a(href="assets/data/工作坊事後問卷.csv") 工作坊事後問卷
-            li: a(href="assets/data/olympic.csv") 世界各國奧林匹克得牌數統計
-            li: a(href="assets/data/quake.csv") 2016年九月世界各地地震位置與強度
-            li: a(href="assets/data/醫院列表.csv") 台灣醫院列表
-            li: a(href="assets/data/宜蘭縣村里長資訊.xlsx") 宜蘭縣村里長資訊
+            li #[a(href="assets/data/2016總統就職演說用詞分析.csv") 總統就職演說用詞分析-2016] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/總統演說用詞-2016-vs-2020.csv") 總統就職演說用詞分析 2016 vs 2020] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/台大學生會.csv") 台大學生會政見用詞] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/world-population.csv") 世界各國人口數] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/各國來台旅遊人數-2016-2014.csv") 2014 ~ 2016 各國來台旅遊人數] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/來台旅遊人數(原始檔).xls") 2017/02各國來台旅遊人數原始檔] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/各國平均壽命.csv") 各國平均壽命] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/粗離婚率.csv") 粗離婚率] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/漸凍人協會捐款芳名錄近六百筆.csv") 漸凍人協會捐款芳名錄近六百筆] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/漸凍人協會捐款芳名錄.csv") 漸凍人協會捐款芳名錄 (全部)] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/學生成績表.csv") 學生成績表] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/百家姓.csv") 百家姓] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="assets/data/2017數位藝術節臉書互動.csv") 2017數位藝術節臉書互動] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/us-crime-data.csv") 美國 20 年間犯罪率資料] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/us-crime-subset.csv") 美國 20 年間犯罪率資料 ( 部份資料 )] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/朱立倫政治獻金資料近六百筆.csv") 朱立倫政治獻金資料近六百筆] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/伊斯蘭相關恐攻事件.csv") 伊斯蘭相關恐攻事件] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/105年鄉鎮人口資料.csv") 105年各鄉鎮人口資料] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="assets/data/工作坊事後問卷.csv") 工作坊事後問卷] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/olympic.csv") 世界各國奧林匹克得牌數統計] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/quake.csv") 2016年九月世界各地地震位置與強度] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/醫院列表.csv") 台灣醫院列表] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="assets/data/宜蘭縣村里長資訊.xlsx") 宜蘭縣村里長資訊] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
 
         .sect
           h3#plotdb-samples PlotDB 範例圖表連結
           ul
-            li: a(href="http://plotdb.com/chart/1003",target="_blank") Pie Bubble
-            li: a(href="http://plotdb.com/chart/2145",target="_blank") QA style Long Form
-            li: a(href="http://plotdb.com/chart/2146",target="_blank") Questionnaire
-            li: a(href="http://plotdb.com/chart/980",target="_blank") Dumbbell Chart
-            li: a(href="http://plotdb.com/chart/1015",target="_blank") Cycle Plot
-            li: a(href="http://plotdb.com/chart/1032",target="_blank") Connected Scatter Plot
-            li: a(href="http://plotdb.com/chart/1039",target="_blank") Sankey Chord
-            li: a(href="https://hackmd.io/p/SJ4KJA_Vx#/",target="_blank") PlotDB 互動式內容展示
+            li #[a(href="http://plotdb.com/chart/1003",target="_blank") Pie Bubble] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/2145",target="_blank") QA style Long Form] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/2146",target="_blank") Questionnaire] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/980",target="_blank") Dumbbell Chart] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/1015",target="_blank") Cycle Plot] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/1032",target="_blank") Connected Scatter Plot] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://plotdb.com/chart/1039",target="_blank") Sankey Chord] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://hackmd.io/p/SJ4KJA_Vx#/",target="_blank") PlotDB 互動式內容展示] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
 
         .sect
           h3#data-sources 資料來源
           ul
-            //-li: a(href="http://win.dgbas.gov.tw/dgbas04/bc5/EarningAndProductivity/QueryPages/More.aspx") 產業結構
-            li: a(href="http://data.gov.tw") 台灣開放資料入口網站
-            li: a(href="http://www.stat.gov.tw/mp.asp?mp=4") 中華民國統計資訊網
-            //li: a(href="http://data.infographics.tw/viz/twstat/") 縣市重要統計指標 1998 ~ 2014
-            li: a(href="https://www.tfai.org.tw/zh/boxOffice/index") 全國票房資訊 
+            //-li #[a(href="http://win.dgbas.gov.tw/dgbas04/bc5/EarningAndProductivity/QueryPages/More.aspx") 產業結構] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://data.gov.tw") 台灣開放資料入口網站] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://www.stat.gov.tw/mp.asp?mp=4") 中華民國統計資訊網] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //li #[a(href="http://data.infographics.tw/viz/twstat/") 縣市重要統計指標 1998 ~ 2014] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://www.tfai.org.tw/zh/boxOffice/index") 全國票房資訊 ] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
 
         .sect
           h3#tool-links 工具連結
           ul
-            li: a(href="https://vectorpaint.yaks.co.nz",target="_blank") Vector Paint 向量編輯服務
-            li: a(href="https://ronnywang.github.io/pdf-table-extractor/",target="_blank") Ronny 的 PDF 資料截取 程式
-            li: a(href="http://zbryikt.github.io/jsonconvert",target="_blank") JSON 轉 CSV
-            li: a(href="http://cartodb.com/") CartoDB
-            li: a(href="https://cartodb.github.io/odyssey.js/") Odyssey.js
-            li: a(href="http://editor.method.ac/") Method Draw SVG Editor
-            li: a(href="https://pulipulichen.github.io/jieba-js/") 結巴 Jieba.js - 中文斷詞工具
-            //-li: a(href="http://0media.tw/t/qa/") 問答式數位專輯
-            //-li: a(href="http://plotdb.com/") PlotDB
-            //-li: a(href="http://atavist.com") Atavist 內容管理系統
-            li: a(href="https://timeline.knightlab.com") TimelineJS 時間軸工具
+            li #[a(href="https://vectorpaint.yaks.co.nz",target="_blank") Vector Paint 向量編輯服務] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://ronnywang.github.io/pdf-table-extractor/",target="_blank") Ronny 的 PDF 資料截取 程式] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://zbryikt.github.io/jsonconvert",target="_blank") JSON 轉 CSV] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://cartodb.com/") CartoDB] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://cartodb.github.io/odyssey.js/") Odyssey.js] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://editor.method.ac/") Method Draw SVG Editor] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://pulipulichen.github.io/jieba-js/") 結巴 Jieba.js - 中文斷詞工具] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://0media.tw/t/qa/") 問答式數位專輯] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://plotdb.com/") PlotDB] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://atavist.com") Atavist 內容管理系統] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://timeline.knightlab.com") TimelineJS 時間軸工具] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
 
         .sect
           h3#references 範例參考
           ul
-            li: a(href="https://plotdb.github.io/election-tw-2020/") 非典型大選分析
-            li: a(href="https://zbryikt.github.io/party-prop-calc/") 小黨與政黨票門檻分析
-            li: a(href="https://ncase.me/ballot/") To Build a Better Ballot
-            li: a(href="https://ncase.me/matrix/") Explorable Explanation of 2D Matrix
-            li: a(href="https://audreyt.github.io/polygons/") 別讓圖形不開心
-            li: a(href="http://graphics.wsj.com/gender-pay-gap/") WSJ 的動態垂直啞鈴圖
-            li: a(href="http://0media.tw/p/yslin") 林義雄數位專輯
-            li: a(href="http://www.nytimes.com/interactive/2015/09/30/business/how-the-us-and-opec-drive-oil-prices.html") 紐約時報: 油價 scrolltelling 範例
+            li #[a(href="https://plotdb.github.io/election-tw-2020/") 非典型大選分析] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://zbryikt.github.io/party-prop-calc/") 小黨與政黨票門檻分析] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://ncase.me/ballot/") To Build a Better Ballot] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://ncase.me/matrix/") Explorable Explanation of 2D Matrix] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="https://audreyt.github.io/polygons/") 別讓圖形不開心] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://graphics.wsj.com/gender-pay-gap/") WSJ 的動態垂直啞鈴圖] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://0media.tw/p/yslin") 林義雄數位專輯] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            li #[a(href="http://www.nytimes.com/interactive/2015/09/30/business/how-the-us-and-opec-drive-oil-prices.html") 紐約時報: 油價 scrolltelling 範例] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
             //-
-              li: a(href="http://viz.tkirby.org/mrt/") 捷運出站人數圖
-              li: a(href="http://viz.tkirby.org/hiking/") 台北市親山步道列表
-              li: a(href="http://viz.tkirby.org/banana/") 3D 香蕉圖
-              li: a(href="http://viz.tkirby.org/crossfilter/") 立委質詢 Cross Filter
-              li: a(href="http://square.github.io/crossfilter/") Cross Filter library
-            //-li: a(href="http://prinzhorn.github.io/skrollr/") Skrollr
-            //-li: a(href="http://zbryikt.github.io/bezier-edit/") 線上多人貝茲曲線編輯器
-            //-li: a(href="http://www.x3dom.org/") X3D - 3D 標記語言
-            //-li: a(href="https://kirbywu.atavist.com/reporter") Atavist 範例文章
+              li #[a(href="http://viz.tkirby.org/mrt/") 捷運出站人數圖] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+              li #[a(href="http://viz.tkirby.org/hiking/") 台北市親山步道列表] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+              li #[a(href="http://viz.tkirby.org/banana/") 3D 香蕉圖] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+              li #[a(href="http://viz.tkirby.org/crossfilter/") 立委質詢 Cross Filter] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+              li #[a(href="http://square.github.io/crossfilter/") Cross Filter library] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://prinzhorn.github.io/skrollr/") Skrollr] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://zbryikt.github.io/bezier-edit/") 線上多人貝茲曲線編輯器] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="http://www.x3dom.org/") X3D - 3D 標記語言] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
+            //-li #[a(href="https://kirbywu.atavist.com/reporter") Atavist 範例文章] #[span.has-tips.manual(ld="copy") #[i.i-clone]#[.hover-tip.tip-sm.tip-fit copied]]
       .d-none.d-sm-block
         .sticky(style="top:1em")
           h5.text-right 索引
@@ -121,3 +126,10 @@ block body
             a.list-group-item(href="#references") 範例參考
 
 block script
+  +script([
+    {name: "proxise"},
+    {name: "@loadingio/debounce.js"},
+    {name: "@loadingio/ldquery"},
+    {name: "ldview"}
+  ])
+  script(type="module"): include:lsc index.ls
